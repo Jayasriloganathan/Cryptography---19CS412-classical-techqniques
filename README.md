@@ -32,6 +32,7 @@ Implementation using C or pyhton code
 ## PROGRAM:
 PROGRAM:
 CaearCipher.
+```
 #include <stdio.h>
 #include <stdlib.h>
  
@@ -66,11 +67,12 @@ scanf("%d", &key); // Read the key from the user
  
 caesarDecrypt(message, key); printf("Decrypted Message: %s", message); return 0;
 }
-
+```
 
 ## OUTPUT:
 OUTPUT:
 Simulating Caesar Cipher
+<img width="1736" height="902" alt="image" src="https://github.com/user-attachments/assets/d3e0e492-0799-4a1d-b7a1-310880c78a43" />
 
 
 Input : Anna University
@@ -119,6 +121,7 @@ To decrypt, use the INVERSE (opposite) of the last 3 rules, and the 1st as-is (d
 
 
 ## PROGRAM:
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -274,10 +277,14 @@ printf("Cipher text: %s\n", str);
 
 return 0;
 }
-
+```
 ## OUTPUT:
 Output:
 Key text: Monarchy Plain text: instruments Cipher text: gatlmzclrqtx
+
+<img width="1750" height="935" alt="image" src="https://github.com/user-attachments/assets/5939152a-acb4-4157-8d1f-b0783e24a372" />
+
+
 
 ## RESULT:
 The program is executed successfully
@@ -313,6 +320,7 @@ The cipher can, be adapted to an alphabet with any number of letters. All arithm
 
 ## PROGRAM:
 PROGRAM:
+```
 #include <stdio.h> #include <string.h>
 int keymat[3][3] = { { 1, 2, 1 }, { 2, 3, 2 }, { 2, 2, 1 } };
 int invkeymat[3][3] = { { -1, 0, 1 }, { 2, -1, 0 }, { -2, 2, -1 } }; char key[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -358,10 +366,12 @@ strcat(dec, decode(a, b, c));
 printf("Decoded message : %s\n", dec); return 0;
 }
 
-
+```
 ## OUTPUT:
 OUTPUT:
 Simulating Hill Cipher
+
+<img width="1913" height="1018" alt="image" src="https://github.com/user-attachments/assets/ba554e0a-cec8-41ba-9a87-e579cdddb251" />
 
 
 Input Message : SecurityLaboratory
@@ -398,6 +408,7 @@ The Vigenere cipher is a method of encrypting alphabetic text by using a series 
 
 ## PROGRAM:
 PROGRAM:
+```
 #include<stdio.h> #include<string.h>
 //FunctiontoperformVigenereencryption voidvigenereEncrypt(char*text,constchar*key){ inttextLen= strlen(text);
 intkeyLen=strlen(key); for(inti =0;i< textLen;i++){ charc =text[i]; if(c>='A'&&c<='Z'){
@@ -427,11 +438,13 @@ constchar *key="KEY";//Replacewithyourdesired key
 char message[]= "Thisisasecretmessage.";//Replace withyourmessage
 //Encrypt themessage vigenereEncrypt(message,key); printf("EncryptedMessage:%s\n",message);
 //Decrypt themessage backtotheoriginal vigenereDecrypt(message,key); printf("DecryptedMessage:%s\n",message); Return 0;
-
+```
 ## OUTPUT:
 OUTPUT :
 
 Simulating Vigenere Cipher
+
+<img width="1919" height="925" alt="image" src="https://github.com/user-attachments/assets/f13baef2-abc0-497d-9364-7c83e5391234" />
 
 
 Input Message : SecurityLaboratory
@@ -467,6 +480,7 @@ In the rail fence cipher, the plaintext is written downwards and diagonally on s
 ## PROGRAM:
 
 PROGRAM:
+```
 #include<stdio.h> #include<string.h> #include<stdlib.h> main()
 {
 int i,j,len,rails,count,code[100][1000]; char str[1000];
@@ -512,10 +526,10 @@ if(code[i][j]!=0) printf("%c",code[i][j]);
 }
 printf("\n");
 }
-## OUTPUT:
+```
+# OUTPUT:
 OUTPUT:
-Enter a Secret Message wearediscovered
-Enter number of rails 2
-waeicvrderdsoee
+<img width="1919" height="1041" alt="image" src="https://github.com/user-attachments/assets/df9b8486-606b-4ded-ac38-459a462860c3" />
+
 ## RESULT:
 The program is executed successfully
